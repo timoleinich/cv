@@ -8,12 +8,14 @@
   <title>Timo Leinich | Curriculum Vitae</title>
   <style>
     :root {
-      color-scheme: dark;
-      --ink: #f3f4f5;
-      --muted: #b0bdc8;
-      --accent: #d3b15b;
-      --line: #314352;
-      --paper: #0d1c29;
+      color-scheme: light;
+      --ink: #172d3a;
+      --muted: #4b616e;
+      --accent: #16617a;
+      --accent-hover: #0d4659;
+      --line: #cbd8df;
+      --paper: #f7f9fa;
+      --header: #eef4f6;
     }
     * { box-sizing: border-box; }
     body {
@@ -23,7 +25,7 @@
       font: 15px/1.6 "Segoe UI", Arial, sans-serif;
     }
     a { color: var(--accent); text-underline-offset: 3px; overflow-wrap: anywhere; }
-    a:hover { color: var(--ink); }
+    a:hover { color: var(--accent-hover); }
     a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
     .cv {
       max-width: 1200px;
@@ -31,7 +33,7 @@
       padding: 0 56px 32px;
       background: var(--paper);
     }
-    header { padding-bottom: 48px; border-bottom: 1px solid var(--line); }
+    header { padding-bottom: 48px; border-bottom: 1px solid var(--line); background: var(--header); margin: 0 -56px; padding-left: 56px; padding-right: 56px; }
     .navigation { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 28px 0; border-bottom: 1px solid var(--line); }
     .brand { color: var(--ink); font: 600 23px/1.2 Georgia, "Times New Roman", serif; text-decoration: none; }
     .brand span { display: block; margin-top: 7px; color: var(--accent); font: 11px/1.4 "Segoe UI", Arial, sans-serif; letter-spacing: .2em; text-transform: uppercase; }
@@ -46,8 +48,8 @@
     .hero-note p { margin: 0; }
     .actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
     .button { display: inline-block; padding: 13px 22px; border: 1px solid var(--accent); font-weight: 600; text-decoration: none; }
-    .button.primary { background: var(--accent); color: #0d1c29; }
-    .button:hover { background: #ecd18c; border-color: #ecd18c; color: #0d1c29; }
+    .button.primary { background: var(--accent); color: #fff; }
+    .button:hover { background: var(--accent-hover); border-color: var(--accent-hover); color: #fff; }
     address { display: flex; flex-wrap: wrap; gap: 5px 22px; margin-top: 21px; font-size: 14px; font-style: normal; }
     .layout { display: grid; grid-template-columns: minmax(0, 1fr) 245px; gap: 64px; }
     h2 { margin: 42px 0 24px; font: 400 32px/1.2 Georgia, "Times New Roman", serif; letter-spacing: -.015em; }
@@ -73,6 +75,7 @@
     footer { border-top: 1px solid var(--line); margin-top: 26px; padding-top: 14px; color: var(--muted); font-size: 12px; }
     @media (max-width: 760px) {
       .cv { margin: 0; padding: 0 24px 24px; }
+      header { margin: 0 -24px; padding-left: 24px; padding-right: 24px; }
       .navigation { align-items: flex-start; padding: 22px 0; gap: 20px; }
       .brand { font-size: 20px; }
       nav { gap: 10px 16px; justify-content: flex-end; max-width: 170px; }
@@ -93,7 +96,7 @@
       :root { color-scheme: light; --ink: #172d3a; --muted: #465b68; --accent: #205b71; --line: #cdd7dc; --paper: #fff; }
       body { background: white; font-size: 10pt; line-height: 1.42; }
       .cv { max-width: none; margin: 0; padding: 0; }
-      header { padding-bottom: 15px; }
+      header { margin: 0; padding: 0 0 15px; background: transparent; }
       .navigation, .actions, .hero-note { display: none; }
       .hero { display: block; padding: 0; }
       h1 { font-size: 31pt; }
@@ -171,7 +174,7 @@
         <article class="job">
           <h3>Cloud Security Architect</h3>
           <p class="company">Microsoft</p>
-          <p class="meta"><time datetime="2026">2026</time> &ndash; Present &middot; EMEA</p>
+          <p class="meta"><time datetime="2026">2026</time> &ndash; Present</p>
           <ul>
             <li>Support enterprise customers across EMEA in protecting their environments with Microsoft Defender solutions.</li>
             <li>Threat Protection Lead for GD across EMEA.</li>
@@ -191,7 +194,7 @@
         <article class="job">
           <h3>Transition Manager</h3>
           <p class="company">SoftwareOne</p>
-          <p class="meta"><time datetime="2025">2025</time> &middot; Germany</p>
+          <p class="meta"><time datetime="2025">2025</time></p>
           <ul>
             <li>Planned and executed the transition of Volkswagen VDI IT services from the previous managed service provider to SoftwareOne.</li>
             <li>Coordinated technical and operational stakeholders, scope, timelines, risks, and dependencies.</li>
@@ -202,7 +205,7 @@
         <article class="job">
           <h3>Cloud Security Advisor | Customer Success</h3>
           <p class="company">BlueVoyant</p>
-          <p class="meta"><time datetime="2022">2022</time> &ndash; <time datetime="2025">2025</time> &middot; Germany</p>
+          <p class="meta"><time datetime="2022">2022</time> &ndash; <time datetime="2025">2025</time></p>
           <ul>
             <li>Managed approximately &euro;7M in annual recurring revenue and developed a new service offering informed by customer insights.</li>
             <li>Created a comprehensive learning plan and taught the Zero Trust framework to 60 employees, including onboarding five new hires.</li>
@@ -213,7 +216,7 @@
         <article class="job">
           <h3>Technical Specialist | Security</h3>
           <p class="company">Microsoft</p>
-          <p class="meta"><time datetime="2020">2020</time> &ndash; <time datetime="2022">2022</time> &middot; Stuttgart, Germany</p>
+          <p class="meta"><time datetime="2020">2020</time> &ndash; <time datetime="2022">2022</time></p>
           <ul>
             <li>Secured the first Identity Governance (IGAM) deal in EMEA for FY22 and the largest E5 deal in EMEA for FY23.</li>
             <li>Enabled the DACH Technical Specialist community through comprehensive identity security training.</li>
@@ -224,7 +227,7 @@
         <article class="job">
           <h3>Senior Premier Field Engineer</h3>
           <p class="company">Microsoft</p>
-          <p class="meta"><time datetime="2016">2016</time> &ndash; <time datetime="2020">2020</time> &middot; Stuttgart region, Germany</p>
+          <p class="meta"><time datetime="2016">2016</time> &ndash; <time datetime="2020">2020</time></p>
           <ul>
             <li>Helped organizations worldwide harden infrastructure and improve security resilience, including contributions to the Microsoft CISO Workshop.</li>
             <li>Modernized legacy assessments into an on-demand approach supporting continuous optimization of customer workloads and services.</li>
@@ -234,7 +237,7 @@
         <article class="job">
           <h3>Principal Managed Services</h3>
           <p class="company">COMPAREX AG</p>
-          <p class="meta"><time datetime="2013">2013</time> &ndash; <time datetime="2016">2016</time> &middot; Munich, Germany</p>
+          <p class="meta"><time datetime="2013">2013</time> &ndash; <time datetime="2016">2016</time></p>
           <ul>
             <li>Helped establish the Managed Services department and transform the company's positioning into a full-service managed service provider.</li>
             <li>Led service transitions and customer partnerships, with leadership impacting 100 engineers and approximately &euro;12M in annual recurring revenue.</li>
@@ -246,7 +249,7 @@
         <article class="job">
           <h3>Lead Managed Service IT Specialist</h3>
           <p class="company">COMPAREX AG</p>
-          <p class="meta"><time datetime="2010">2010</time> &ndash; <time datetime="2013">2013</time> &middot; Munich, Germany</p>
+          <p class="meta"><time datetime="2010">2010</time> &ndash; <time datetime="2013">2013</time></p>
           <ul>
             <li>Provided third-level support for a global automotive customer's Windows Server infrastructure and operated global web services.</li>
             <li>Delivered cloud service proofs of concept and operated corporate McAfee services with Host Intrusion Prevention.</li>
@@ -256,7 +259,7 @@
         <article class="job">
           <h3>Managed Services IT Specialist</h3>
           <p class="company">COMPAREX AG</p>
-          <p class="meta"><time datetime="2009">2009</time> &ndash; <time datetime="2010">2010</time> &middot; Munich metropolitan area, Germany</p>
+          <p class="meta"><time datetime="2009">2009</time> &ndash; <time datetime="2010">2010</time></p>
           <ul>
             <li>Operated enterprise Active Directory and Exchange infrastructure for the German automotive sector.</li>
             <li>Remediated Active Directory risks identified through Microsoft Risk Assessment Programs and monitored services with System Center Operations Manager.</li>
@@ -266,7 +269,7 @@
         <article class="job">
           <h3>IT Support Specialist</h3>
           <p class="company">Continental</p>
-          <p class="meta"><time datetime="2003">2003</time> &ndash; <time datetime="2009">2009</time> &middot; Villingen-Schwenningen, Germany</p>
+          <p class="meta"><time datetime="2003">2003</time> &ndash; <time datetime="2009">2009</time></p>
           <ul>
             <li>Improved help desk KPIs, ticket handling, and user experience, contributing to the support operation's worldwide top-three ranking.</li>
             <li>Supported Windows client pilots, end-user devices, VIP users, and local IT operations.</li>
